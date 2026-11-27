@@ -46,3 +46,9 @@ h1, h2, h3, h4, h5, h6 { hyphens: manual; }
 .hps-footer-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
 .hps-btn-outline { background: transparent !important; border: 1px solid var(--hps-orange) !important; color: var(--hps-orange) !important; }
 .hps-btn-outline:hover { background: var(--hps-orange) !important; color: var(--hps-navy) !important; }
+
+/* 4. Small orange text on white/cream (section kickers, links) was 2.2:1 -> AA-safe dark orange;
+      the transformations caption grey (#7a7a7a on cream, 4.1:1) -> slate */
+.theme-title h6, .projact-link a, .projact-link a:hover { color: var(--hps-orange-text) !important; }
+.projact-link { color: var(--hps-slate) !important; }
+.elementor-element-4d0593a .theme-title h6 { color: var(--hps-orange) !important; }

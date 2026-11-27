@@ -1,0 +1,44 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "site/*.html"
+        ],
+        "createdAt": "2026-11-27T13:18:55.679Z",
+        "reason": "The Hair Patch Studio brand cream #FEF9E1 (Astra global colour on thehairpatchstudio.com); user asked to use the brand colours"
+      },
+      {
+        "rule": "overused-font",
+        "value": "*",
+        "files": [
+          "site/assets/magnific-popup-8ac541.css"
+        ],
+        "createdAt": "2026-11-27T13:18:55.701Z",
+        "reason": "Vendored theme/plugin stylesheet font declaration; site text uses Rubik and Karla via hps-brand.css"
+      },
+      {
+        "rule": "overused-font",
+        "value": "*",
+        "files": [
+          "site/assets/post-8-1d827c.css"
+        ],
+        "createdAt": "2026-11-27T13:18:55.723Z",
+        "reason": "Vendored theme/plugin stylesheet font declaration; site text uses Rubik and Karla via hps-brand.css"
+      },
+      {
+        "rule": "overused-font",
+        "value": "*",
+        "files": [
+          "site/assets/gfonts-ac6fdd.css"
+        ],
+        "createdAt": "2026-11-27T13:18:55.744Z",
+        "reason": "Vendored theme/plugin stylesheet font declaration; site text uses Rubik and Karla via hps-brand.css"
+      }
+    ]
+  }
+}
