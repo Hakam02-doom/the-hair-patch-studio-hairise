@@ -1,0 +1,48 @@
+/* The Hair Patch Studio brand layer on top of the Hairise theme.
+   Palette + type from thehairpatchstudio.com (orange / navy / cream, Rubik + Karla). */
+:root {
+  --hps-orange: #FD9800; --hps-orange-dark: #E98C00; --hps-orange-text: #A15C00;
+  --hps-navy: #0F172A; --hps-slate: #454F5E; --hps-cream: #FEF9E1;
+  --themeht-primary-color: #FD9800; --themeht-secondary-color: #0F172A;
+  --themeht-light-color: #FEF9E1; --themeht-body-color: #454F5E;
+  --themeht-typography-body-font-family: 'Karla', sans-serif;
+  --themeht-typography-secondary-font-family: 'Rubik', sans-serif;
+  --themeht-typography-h1-font-family: 'Rubik', sans-serif; --themeht-typography-h2-font-family: 'Rubik', sans-serif;
+  --themeht-typography-h3-font-family: 'Rubik', sans-serif; --themeht-typography-h4-font-family: 'Rubik', sans-serif;
+  --themeht-typography-h5-font-family: 'Rubik', sans-serif; --themeht-typography-h6-font-family: 'Rubik', sans-serif;
+}
+body { font-family: 'Karla', sans-serif; }
+h1, h2, h3, h4, h5, h6, .themeht-btn, .menu > li > a { font-family: 'Rubik', sans-serif; }
+
+/* Logo: Hairise's header was sized for a wide 700x181 wordmark; the HPS logo is a taller lockup */
+.navbar-brand.logo img, .logo img, .footer-logo img { height: 64px !important; width: auto !important; max-width: none; }
+.sticky-logo img { height: 52px !important; }
+@media (max-width: 1199px) { .navbar-brand.logo img, .logo img { height: 52px !important; } }
+
+/* ---------- Fixes to issues inherited from the Hairise theme ---------- */
+/* 1. White text on the accent: on HPS orange that fails contrast (2.1:1) -> navy text on orange buttons */
+.themeht-btn.primary-btn, .primary-btn, .wpcf7-submit {
+  color: var(--hps-navy) !important;
+}
+.themeht-btn.primary-btn:hover, .wpcf7-submit:hover { color: #fff !important; background-color: var(--hps-navy) !important; }
+
+/* 2. Body copy: readable measure and line height */
+.elementor-widget-text-editor p { line-height: 1.7; }
+
+/* WhatsApp button (HPS uses WhatsApp chat), above the theme's back-to-top */
+.hps-whatsapp { position: fixed; right: 24px; bottom: 90px; z-index: 9999; width: 58px; height: 58px; border-radius: 50%;
+  background: #25D366; display: grid; place-items: center; box-shadow: 0 8px 24px rgba(15,23,42,.25); transition: transform .2s ease; }
+.hps-whatsapp:hover { transform: translateY(-2px); }
+.hps-whatsapp svg { width: 30px; height: 30px; fill: #fff; }
+@media (max-width: 767px) { .hps-whatsapp { right: 16px; bottom: 80px; width: 52px; height: 52px; } }
+@media (prefers-reduced-motion: reduce) { .hps-whatsapp { transition: none; } }
+h1, h2, h3, h4, h5, h6 { hyphens: manual; }
+
+/* 3. The big "services" band was the theme's primary blue with white text; on orange that fails -> navy band */
+.elementor-element-4d0593a { background-color: var(--hps-navy) !important; }
+/* stat circles: navy numbers on orange */
+.featured-numbr, .featured-numbr * { color: var(--hps-navy) !important; }
+.hps-footer-cta-text { color: #C9D0DB; margin-bottom: 18px; max-width: 46ch; }
+.hps-footer-ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.hps-btn-outline { background: transparent !important; border: 1px solid var(--hps-orange) !important; color: var(--hps-orange) !important; }
+.hps-btn-outline:hover { background: var(--hps-orange) !important; color: var(--hps-navy) !important; }
